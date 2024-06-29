@@ -29,12 +29,12 @@ class Pessoa:
 
  
 
-
-# p.comer(True)
-# print(p.idade, p.comendo)
-# print(Pessoa.e_maior_idade(p.idade))
-# print(Pessoa.e_maior_idade(8))
 p = Pessoa("Guilherme", 31)
+p.comer(True)
+print(p.idade, p.comendo)
+print(Pessoa.e_maior_idade(p.idade))
+print(Pessoa.e_maior_idade(8))
+
 
 p2 = Pessoa("Dayvison", 5)
 

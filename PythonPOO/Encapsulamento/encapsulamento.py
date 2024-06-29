@@ -1,3 +1,9 @@
+# Encapsulamento
+
+# public: atributos ou metodos que podem ser acessados dentro e fora da classe
+# protected: são atributos ou metodos que podem ser acessados somente dentro da classe ou pelas filhas da classe
+# private : são atributos ou metodos que só estão disponiveis dentro da classe
+
 class Conta:
 
     def __init__(self,num_agencia, saldo=0):
