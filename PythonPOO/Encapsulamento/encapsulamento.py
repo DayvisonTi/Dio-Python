@@ -1,12 +1,13 @@
 # Encapsulamento
 
 # public: atributos ou metodos que podem ser acessados dentro e fora da classe
-# protected: são atributos ou metodos que podem ser acessados somente dentro da classe ou pelas filhas da classe
-# private : são atributos ou metodos que só estão disponiveis dentro da classe
+# (_) protected: são atributos ou metodos que podem ser acessados somente dentro da classe ou pelas filhas da classe
+# (__) private : são atributos ou metodos que só estão disponiveis dentro da classe (_NOMECLASSE__nome_atributo)
 
 class Conta:
 
     def __init__(self,num_agencia, saldo=0):
+        # se o atributo tiver um underline(_) antes do nome,por convenção não deve ser acessado diretamente
         self._saldo = saldo
         # self.conta = conta
         self.num_agencia = num_agencia
@@ -24,8 +25,8 @@ class Conta:
     def mostrar_saldo(self, senha):
         if senha == 1234:
             return self._saldo
-        else:
-            return f"Senha Incorreta."
+        
+        print(f"Senha Incorreta.")
     
 
         

@@ -17,7 +17,7 @@ class Nome:
 
     @nome.deleter
     def nome(self):
-        print("deletando")
+        print("Deletando...")
         self._nome_completo = "Vazio"
         
 
