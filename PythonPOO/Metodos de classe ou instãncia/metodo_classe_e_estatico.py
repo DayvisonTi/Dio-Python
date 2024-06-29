@@ -23,7 +23,10 @@ class Pessoa:
     def comer(self, comendo):
         self.comendo = comendo
         if comendo:
-            print(f"{self.nome} está comendo.")
+            return f"{self.nome} está comendo."
+        print("Não está comendo....")
+
+
 
 
 
@@ -39,4 +42,4 @@ print(Pessoa.e_maior_idade(8))
 p2 = Pessoa("Dayvison", 5)
 
 
-print(Pessoa.e_maior_idade(p.idade))
+Pessoa.e_maior_idade(p.idade)

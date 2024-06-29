@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod, abstractproperty
+from abc import ABC, abstractmethod ,abstractproperty
 
 class ControleRemoto(ABC):
     
@@ -9,7 +9,7 @@ class ControleRemoto(ABC):
     def desligar(self):
         pass
 
-    @property
+    
     @abstractproperty
     def marca(self):
         pass      
